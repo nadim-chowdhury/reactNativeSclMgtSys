@@ -1,10 +1,24 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 
 export default function StudentHome() {
   return (
-    <View>
-      <Text>Student Home Screen</Text>
+    <View style={styles.container}>
+      <Text style={styles.headerText}>Welcome to the Student Portal</Text>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#f5f5f5',
+  },
+  headerText: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#333',
+  },
+});
